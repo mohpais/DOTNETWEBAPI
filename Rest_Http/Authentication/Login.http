@@ -1,0 +1,17 @@
+@host=https://localhost:7062
+
+POST {{host}}/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "us": "eyJlbWFpbCI6Im1vaGFtYWQucGFpczMwQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiUEBzJHcwcmQxMjMhIn0",
+  "ps": "SpzvZvY5x5BH2_L8B6GhAduUYwSXgCFSqoHKTi1VhfFw4Puc2ET0mgjTQus2eMlq1JC0W7p4CoiTJ3z"
+}
+
+# {
+#   "email": "test",
+#   "password": "test_p"
+# }
+
+# xykoxb40Bqr6P1EXBni7pdnY0BZSv7BOSdbVtt6aIcE=
+
