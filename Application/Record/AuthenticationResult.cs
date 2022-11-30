@@ -3,8 +3,10 @@ namespace Application.Record;
 // public record AuthenticationResult();
 
 public record LoginResult(
+  string FullName,
+  string UserName,
   string Email,
-  string Password,
+  string PhoneNo,
   string Token
 );
 

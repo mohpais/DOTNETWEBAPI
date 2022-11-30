@@ -10,7 +10,6 @@ namespace Application.Repositories
 {
   public interface IUserRepository : IBaseRepository<User>
   {
-    List<User> GetAllUsers();
-    Task<User> GetUserByEmail(string email);
+    Task<User> GetUserByEmailAsync(string email);
   }
 }

@@ -45,7 +45,8 @@ namespace Infrastructure.Repositories
 
     public IEnumerable<User> ListAll()
     {
-      throw new NotImplementedException();
+      var users = _applicationDBContext.Users.ToList();
+      return users;
     }
 
     public void Remove(User entity)
@@ -53,14 +54,7 @@ namespace Infrastructure.Repositories
       throw new NotImplementedException();
     }
 
-    public List<User> GetAllUsers()
-    {
-      var users = _applicationDBContext.Users.ToList();
-
-      return users;
-    }
-
-    public async Task<User> GetUserByEmail(string email)
+    public async Task<User> GetUserByEmailAsync(string email)
     {
       var users = await _applicationDBContext.Users.Where<User>(x => x.Email == email).FirstOrDefaultAsync();
 

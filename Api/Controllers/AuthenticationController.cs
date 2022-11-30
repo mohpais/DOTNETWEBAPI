@@ -22,7 +22,7 @@ namespace Api.Controllers
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request)
     {
-      var login = _authenticationService.doLogin(request.us);
+      var login = _authenticationService.doLoginAsync(request.us);
 
       return Ok(login);
     }

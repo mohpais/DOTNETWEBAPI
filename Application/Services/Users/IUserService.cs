@@ -10,7 +10,6 @@ namespace Application.Services.Users
 {
   public interface IUserService : IBaseRepository<User>
   {
-    List<User> GetAllUsers();
-    Task<User> GetUserByEmail(string email);
+    Task<User> GetUserByEmailAsync(string email);
   }
 }

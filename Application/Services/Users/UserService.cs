@@ -23,19 +23,14 @@ namespace Application.Services.Users
       return await _userRepository.Create(entity);
     }
 
-    public List<User> GetAllUsers()
-    {
-      throw new NotImplementedException();
-    }
-
     public User GetById(int id)
     {
       throw new NotImplementedException();
     }
 
-    public async Task<User> GetUserByEmail(string email)
+    public async Task<User> GetUserByEmailAsync(string email)
     {
-      return await _userRepository.GetUserByEmail(email);
+      return await _userRepository.GetUserByEmailAsync(email);
     }
 
     public IEnumerable<User> ListAll()

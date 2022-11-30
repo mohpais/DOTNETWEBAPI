@@ -8,8 +8,8 @@ namespace Application.Services.Authentication
 {
   public interface IAuthenticationService
   {
-    // Task<LoginResult> doLogin(string email, string password);
-    Task<LoginResult> doLogin(string us);
+    // Task<LoginResult> doLogin(string email, string password); IActionResult
+    Task<LoginResult> doLoginAsync(string us);
     RegisterResult doRegist(string firtname, string lastname, string email, string password);
   }
 }

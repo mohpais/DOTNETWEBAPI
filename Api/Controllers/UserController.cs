@@ -25,7 +25,7 @@ namespace Api.Controllers
     [HttpGet("list")]
     public ActionResult<IList<User>> List()
     {
-      return Ok(_userService.GetAllUsers());
+      return Ok(_userService.ListAll());
     }
 
     [HttpPost("create")]
@@ -46,7 +46,7 @@ namespace Api.Controllers
     public async Task < IActionResult > Get()
     {
 
-      var response = await _userService.GetUserByEmail("mohamad.pais30@gmail.com");
+      var response = await _userService.GetUserByEmailAsync("mohamad.pais30@gmail.com");
       return Ok(response);
     }
 
